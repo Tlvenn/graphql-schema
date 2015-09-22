@@ -84,6 +84,15 @@ export default class BaseObject {
 
     return this;
   }
+  
+  args(args) {
+    invariant(
+      this.__field,
+      `args(...) must appear under a field`
+    );
+    
+    this.__field.args = args;
+  } 
 
   arg(name, type, defaultValue, description) {
     if (!description) {
