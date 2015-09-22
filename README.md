@@ -145,6 +145,7 @@ Define a new `GraphQLInterfaceType`.
 ##### .appendField(name, field)
 ##### .field(name, type, description)
 ##### .deprecated(deprecationReason)
+##### .args(args)
 ##### .arg(name, type, defaultValue, description)
 ##### .resolve(fn)
 
@@ -155,6 +156,7 @@ Define a new `GraphQLObjectType`.
 ##### .appendField(name, field)
 ##### .field(name, type, description)
 ##### .deprecated(deprecationReason)
+##### .args(args)
 ##### .arg(name, type, defaultValue, description)
 ##### .isTypeOf(fn)
 ##### .resolve(fn)
