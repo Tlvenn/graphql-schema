@@ -142,6 +142,7 @@ Define a new `GraphQLEnumType`
 
 Define a new `GraphQLInterfaceType`.
 
+##### .appendField(name, field)
 ##### .field(name, type, description)
 ##### .deprecated(deprecationReason)
 ##### .arg(name, type, defaultValue, description)
@@ -151,9 +152,11 @@ Define a new `GraphQLInterfaceType`.
 
 Define a new `GraphQLObjectType`.
 
+##### .appendField(name, field)
 ##### .field(name, type, description)
 ##### .deprecated(deprecationReason)
 ##### .arg(name, type, defaultValue, description)
+##### .isTypeOf(fn)
 ##### .resolve(fn)
 
 ## schemaFrom(queryRootType, mutationRootType)

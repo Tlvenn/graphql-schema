@@ -42,6 +42,17 @@ export default class BaseObject {
     }
   }
 
+  appendField(name, field) {
+    this.__saveField();
+
+    invariant(
+      !this.fields[name],
+      `appendField(...): '${name}' is already defined`
+    );
+
+    this.fields[name] = field;
+  }
+
   field(name, type, description, resolve) {
     if (typeof description === 'function') {
       /* eslint-disable no-param-reassign */
